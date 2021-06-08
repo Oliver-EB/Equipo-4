@@ -1,0 +1,110 @@
+:root{
+    --color1:#2d09f8;
+    --color2:hsl(177, 73%, 51%);
+    --color3: linear-gradient(45deg, #1de099, #1dc8cd);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--color3);
+    font-family: 'Dancing Script', cursive;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logotipo{
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+color: var(--color1);
+font-size: 30px;
+}
+header nav a{
+    color: darkblue;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+}
+header nav a:hover ,
+header nav a:active{
+    color: olive;
+}
+
+/*informacion principal*/
+
+.informacion_principal{
+    font-size: 12px;
+    min-height: 40.62em;
+    color: #ffff;
+    background: url(/IMG/backdrop.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end; 
+}
+.informacion_principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+
+}
+.informacion_principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+
+}
+.informacion_principal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+
+}
+.informacion_principal .boton{
+    background:rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color:#ffff;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.informacion_principal .boton:hover{
+    background: #fff;
+    color: #000;
+} 
+.informacion_principal .boton i{
+    margin-right: 1.25em;
+}
+
+@media screen and (max-width:800px){
+header .logotipo{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+header .contenedor{
+    flex-direction: column;
+    -ms-flex-align: center;
+}
+.informacion_principal{
+    font-size: 14px;
+}
+.informacion_principal .descripcion{
+    max-width: 100%;
+}
+
+}
